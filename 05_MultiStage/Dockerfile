@@ -15,9 +15,9 @@ FROM scratch
 WORKDIR /app
 COPY --from=builder /go/src/app /app/
 
-#EXAMPLE
-RUN apt update && apt install -y nginx pkg2
-RUN apt install -y nginx
-RUN apt install -y pkg2
+# #EXAMPLE
+# RUN apt update && apt install -y nginx pkg2
+# RUN apt install -y nginx
+# RUN apt install -y pkg2
 
 CMD ["./webserver"]
